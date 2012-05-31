@@ -1,0 +1,17 @@
+var winstond = require('../'),
+
+var port = process.argv[2] || 9000
+  , type = process.argv[3]
+  , transport = process.argv[4]
+  , options = JSON.parse(process.argv[5] || {});
+
+var server = winstond[type].createServer({
+  services: ['collect', 'query', 'stream'],
+  port: port
+});
+
+server.add(winstond.transports[transport], options);
+
+server.listen();
+
+module.exports = server;
