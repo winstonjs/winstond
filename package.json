@@ -1,7 +1,7 @@
 {
   "name": "winstond",
   "description": "A winston-powered logging daemon",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "contributors": [
     { "name": "Christopher Jeffrey", "email": "chjj@nodejitsu.com" }
