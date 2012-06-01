@@ -12,12 +12,10 @@
   },
   "keywords": ["logging", "sysadmin", "tools"],
   "dependencies": {
-    "flatiron": "0.1.16",
-    "nssocket": "0.3.7",
-    "pkginfo": "0.2.x",
-    "union": "0.3.0",
-    "winston": "0.5.11",
-    "director": "1.0.9-1"
+    "flatiron": "0.2.0",
+    "nssocket": "0.3.8",
+    "winston": ">= 0.6.1",
+    "optimist": ">= 0.3.4"
   },
   "devDependencies": {
     "vows": "0.5.x >=0.5.11"

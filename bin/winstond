@@ -1,9 +1,19 @@
-var winstond = require('../'),
+#!/usr/bin/env node
 
-var port = process.argv[2] || 9000
-  , type = process.argv[3]
-  , transport = process.argv[4]
-  , options = JSON.parse(process.argv[5] || {});
+var winstond = require('../')
+  , common = require('flatiron').common
+  , argv = require('optimist').argv;
+
+var port = argv.p || argv.port || 9000
+  , type = argv.t || argv.type || 'nssocket'
+  , transport = common.capitalize(argv.t || argv.transport || 'File')
+  , options = JSON.parse(argv.o || argv.options || '0');
+
+if (!options) {
+  options = transport === 'File'
+    ? { filename: '/tmp/winston-log.log' }
+    : {};
+}
 
 var server = winstond[type].createServer({
   services: ['collect', 'query', 'stream'],
@@ -13,5 +23,7 @@ var server = winstond[type].createServer({
 server.add(winstond.transports[transport], options);
 
 server.listen();
+
+console.log('winstond [%s]: Listening on port %d.', type, port);
 
 module.exports = server;
