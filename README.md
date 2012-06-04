@@ -66,7 +66,7 @@ $ npm install winstond -g
 ```
 
 #### Author: [Nodejitsu Inc.](http://nodejitsu.com)
-#### Contributors: [Christopher Jefferies](http://github.com/chjj), [Charlie Robbins](http://github.com/indexzero)
+#### Contributors: [Christopher Jeffrey](http://github.com/chjj), [Charlie Robbins](http://github.com/indexzero)
 #### License: **MIT**
 
 [1]: https://github.com/nodejitsu/nssocket
