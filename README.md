@@ -62,7 +62,11 @@ winstond supports http and [nssocket][1] backends.
 ## Installation
 
 ``` bash
-$ npm install winstond
+$ npm install winstond -g
 ```
+
+#### Author: [Nodejitsu Inc.](http://nodejitsu.com)
+#### Contributors: [Christopher Jefferies](http://github.com/chjj), [Charlie Robbins](http://github.com/indexzero)
+#### License: **MIT**
 
 [1]: https://github.com/nodejitsu/nssocket

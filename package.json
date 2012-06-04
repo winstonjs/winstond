@@ -2,9 +2,10 @@
   "name": "winstond",
   "description": "A winston-powered logging daemon",
   "version": "0.0.1",
-  "author": "Charlie Robbins <charlie.robbins@gmail.com>",
+  "author": "Nodejitsu Inc. <info@nodejitsu.com>",
   "contributors": [
-    { "name": "Christopher Jeffrey", "email": "chjj@nodejitsu.com" }
+    { "name": "Christopher Jeffrey", "email": "chjj@nodejitsu.com" },
+    { "name": "Charlie Robbins", "email": "charlie@nodejitsu.com" }
   ],
   "repository": {
     "type": "git",
