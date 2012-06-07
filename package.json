@@ -4,16 +4,27 @@
   "version": "0.0.2",
   "author": "Nodejitsu Inc. <info@nodejitsu.com>",
   "contributors": [
-    { "name": "Christopher Jeffrey", "email": "chjj@nodejitsu.com" },
-    { "name": "Charlie Robbins", "email": "charlie@nodejitsu.com" }
+    {
+      "name": "Christopher Jeffrey",
+      "email": "chjj@nodejitsu.com"
+    },
+    {
+      "name": "Charlie Robbins",
+      "email": "charlie@nodejitsu.com"
+    }
   ],
   "repository": {
     "type": "git",
     "url": "http://github.com/flatiron/winstond.git"
   },
-  "keywords": ["logging", "sysadmin", "tools"],
+  "keywords": [
+    "logging",
+    "sysadmin",
+    "tools"
+  ],
   "dependencies": {
     "flatiron": "0.2.0",
+    "union": "0.3.2",
     "nssocket": "0.3.8",
     "winston": ">= 0.6.1",
     "optimist": ">= 0.3.4"
@@ -22,6 +33,10 @@
     "vows": "0.5.x >=0.5.11"
   },
   "main": "./lib/winstond",
-  "scripts": { "test": "vows --spec --isolate" },
-  "engines": { "node": ">= 0.6.12" }
+  "scripts": {
+    "test": "vows --spec --isolate"
+  },
+  "engines": {
+    "node": ">= 0.6.12"
+  }
 }
